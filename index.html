@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="shortcut icon" href="assets/calc1.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        
+        <div class="item1">
+            <p id="result"></p>
+        </div>
+
+        <div class="content operadores" onclick="clean()">C</div>
+        <div class="content operadores" onclick="insert(' * ')">*</div>
+        <div class="content operadores" onclick="insert(' / ')">/</div>
+        <div class="content operadores" onclick="back()">&lt</div>
+
+        <div class="content" onclick="insert('7')">7</div>
+        <div class="content" onclick="insert('8')">8</div>
+        <div class="content" onclick="insert('9')">9</div>
+        <div class="content operadores" onclick="insert(' + ')">+</div>
+
+        <div class="content " onclick="insert('4')">4</div>
+        <div class="content " onclick="insert('5')">5</div>
+        <div class="content " onclick="insert('6')">6</div>
+        <div class="content operadores " onclick="insert(' - ')">-</div>
+
+        <div class="content " onclick="insert('1')">1</div>
+        <div class="content " onclick="insert('2')">2</div>
+        <div class="content " onclick="insert('3')">3</div>
+        <div class="content operadores item2" onclick="calc()">=</div>
+
+        <div class="content item3" onclick="insert('0')">0</div>
+        <div class="content " onclick="insert('.')">.</div>
+        
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
