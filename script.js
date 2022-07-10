@@ -1,4 +1,4 @@
-var result = document.getElementById("result");
+let result = document.getElementById("result");
 
 function insert(num) {
     let numero = result.innerHTML;
@@ -15,11 +15,10 @@ function clean() {
 }
 
 function calc() {
-    let result = document.getElementById("result").innerHTML;
     if (result) {
-        document.getElementById("result").innerHTML = eval(result);
+        result.innerHTML = eval(result);
     } else {
-        document.getElementById("result").innerHTML = "ERROR!";
+        result.innerHTML = "ERROR!";
     }
 }
 
